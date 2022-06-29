@@ -63,14 +63,14 @@ if (isset($_POST['name'])) {
         }
         ?>
         <form action="index.php" method="post">
-            <input type="text" name="name" id="name" placeholder="Enter Your Name">
-            <input type="text" name="age" id="age" placeholder="Enter Your Age">
-            <input type="text" name="gender" id="gender" placeholder="Enter Your Gender">
-            <input type="text" name="phone" id="phone" placeholder="Enter Your Phone No.">
-            <input type="text" name="email" id="email" placeholder="Email">
-            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter any other information"></textarea>
-            <button class="btn">Submit</button>
-            <!-- <button class="btn">Reset</button> -->
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            <input type="number" name="age" id="age" placeholder="Enter Your Age" required>
+            <input type="text" name="gender" id="gender" placeholder="Enter Your Gender" required>
+            <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone No." required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <textarea name="text" id="desc" cols="30" rows="10" placeholder="Enter any other information" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+            <!-- <button type="reset" class="btn">Reset</button> -->
 
         </form>
 
